@@ -1,7 +1,13 @@
-# Teaching Aid for Jumping Tricks in Platformers
-Demonstration of some neat tricks to make platforming games feel better. This is designed more as a teaching aid to allow people to try out jumping mechanics. 
+# Downgrade of Dave's platformer demo to GameMaker 2.2
+I began this downgrade because the original demo was written in the 2.3Beta of GameMaker that I did not have access to as I am on the trial version of 2.2
 
-Play a live version here: http://www.davetech.co.uk/gamedevplatformer
+I managed to port most of the code and objects over, but there are still some lingering bugs that I didn't work out. The most recent I noticed that the console does not come up when pressing F1.
+
+
+
+Play a live version of Dave's original code at his site here: http://www.davetech.co.uk/gamedevplatformer
+
+*Some of the things from Dave's Demo*
 
 ![Tips and tricks for platformers](http://www.davetech.co.uk//i/github_images/platformer_tricks_and_tips.gif)
 

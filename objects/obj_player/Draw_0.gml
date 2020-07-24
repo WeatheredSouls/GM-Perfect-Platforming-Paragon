@@ -1,5 +1,3 @@
-
-
 // draw_self() this migt cause rounding problems and flickering on web 
 draw_sprite_ext(sprite_index,image_index,round(x),round(y),image_xscale,image_yscale,image_angle,c_white,image_alpha)
 
@@ -13,4 +11,3 @@ for (var i = 0; i < record_count-1; ++i) {
 		draw_line(record_line_x[record_count-1],record_line_y[record_count-1],record_line_x[0],record_line_y[0])
 	}
 }
-

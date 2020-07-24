@@ -1,4 +1,4 @@
+/// @function triggerHelper
+/// @param _message_to_display
 
-function log(_message_to_display) {
-	show_debug_message(_message_to_display)
-}
+show_debug_message(argument0)

@@ -70,3 +70,4 @@ record_frame = 0
 record_line_x = array_create(record_count,x)
 record_line_y = array_create(record_count,y)
 record_line_colour = array_create(record_count,c_white)
+

@@ -37,16 +37,25 @@ target_delta = 1/game_get_speed(gamespeed_fps)
 global.delta_multiplier = 1
 #macro DT global.delta_multiplier
 #endregion
+
+
+
 #region Pick and load a language 
+
+global.local_list_code =[]
+
 if (DEVELOPMENT) {
 	load_language(global.local_list[irandom(global.local_count-1)]) 
 } else {
 	var language_from_os = os_get_language()
 	var language_array_id = in_array(os_get_language(),global.local_list_code)
 	if (language_array_id < 0 and language_array_id != "") {
+		log("__TestStep2")
 		load_language(language_from_os)
 	} else {
+		log("__Else2")
 		load_language("en")
 	}
 }
+
 #endregion

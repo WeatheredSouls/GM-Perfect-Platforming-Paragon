@@ -1,6 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-
 draw_set_font(font_delete_med)
 var helper_v_distance = 24
 
@@ -19,15 +18,15 @@ for (var i = 0; i < helper.size; ++i) {
 	
 	
 	draw_set_colour(c_black)
-    draw_text(helper_start_x+1,helper_start_y+(i*helper_v_distance)+1,t.helper_name[i])
+    draw_text(helper_start_x+1,helper_start_y+(i*helper_v_distance)+1,t[wordLookup.helper_name_0+i])
 	draw_set_colour($333333)
-    draw_text(helper_start_x,helper_start_y+(i*helper_v_distance),t.helper_name[i])
+    draw_text(helper_start_x,helper_start_y+(i*helper_v_distance),t[wordLookup.helper_name_0+i])
 	
 	if (helper_used_all) {
 		if (helper_on[i]) {
 			// draw_text(helper_start_x-280,helper_start_y+(i*helper_v_distance),t.on)
 		} else {
-			draw_text(helper_start_x-280,helper_start_y+(i*helper_v_distance),t.off)
+			draw_text(helper_start_x-280,helper_start_y+(i*helper_v_distance),t[wordLookup.off])
 		}
 	}
 	
@@ -50,5 +49,5 @@ if (helper_used_all) {
 	draw_set_halign(fa_right)
 	draw_set_colour(c_black)
 	draw_set_font(font_gui_controls_for_helpers)
-	draw_text(780,580,t.gui_controls_for_helpers)
+	draw_text(780,580,t[wordLookup.gui_controls_for_helpers])
 }

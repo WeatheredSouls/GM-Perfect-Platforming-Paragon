@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 with (obj_checkpoint) {
+
 	if (place_meeting(x, y, obj_player)) {
 		
 		other.checkpoint_done[checkpoint_number] = true
@@ -55,7 +56,7 @@ if (popup_frame >= popup_framesmax[popup_part]) { // this part of the animation 
     popup_part++
     popup_frame = 0
     
-    if (popup_part >= array_length(popup_framesmax)) { // the whole animation has finished so reset the whole thing
+    if (popup_part >= array_length_1d(popup_framesmax)) { // the whole animation has finished so reset the whole thing
 		popup_part = 0
 		popup_speed = 0
     }

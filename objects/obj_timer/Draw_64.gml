@@ -7,7 +7,7 @@ draw_set_colour(c_black)
 draw_set_halign(fa_left)
 
 if (past_timer_counter > 2) {
-	draw_text(20,20,t.play_besttime + ": " + best_time_string)
+	draw_text(20,20,t[wordLookup.play_besttime] + ": " + best_time_string)
 }
 	
 for (var i = 0; i < past_timer_counter; ++i) {
